@@ -1,0 +1,4 @@
+/* pages/carts/carts.wxss */
+.van-card {
+    margin: 40rpx 0;
+}

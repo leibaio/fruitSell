@@ -1,0 +1,14 @@
+/* pages/start/start.wxss */
+.start_bg {
+    margin-top: 150rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start_QR {
+    margin-top: 150rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

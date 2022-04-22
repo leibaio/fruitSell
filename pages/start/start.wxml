@@ -1,0 +1,14 @@
+<!--pages/start/start.wxml-->
+
+<van-image class="start_bg"
+  width="700rpx"
+  height="500rpx"
+  src="/assets/img/start.png"
+/>
+
+<van-image class="start_QR"
+  width="300rpx"
+  height="300rpx"
+  src="/assets/img/QR.png"
+/>
+

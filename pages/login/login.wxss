@@ -1,0 +1,17 @@
+/* pages/login/login.wxss */
+page {
+    background-color: #ffffff;
+    height: 100%;
+}
+
+
+.login_bg {
+    margin: 150rpx 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_input {
+    margin: 0 20rpx 50rpx 20rpx;
+}
