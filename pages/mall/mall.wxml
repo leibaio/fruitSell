@@ -1,5 +1,4 @@
 <!--pages/mall/mall.wxml-->
-<!--pages/tabbar/home/home.wxml-->
 <view>
   <!-- 搜索模块 -->
   <van-search value="{{ value }}" placeholder="请输入搜索关键词" />
@@ -20,21 +19,21 @@
   </van-grid> -->
   <!-- 商品模块 -->
     <van-card 
-    wx:for="{{ product }}" 
-  wx:key="{{item.id}}"
-  desc="{{item.description}}"
-  title="{{item.title}}" 
-  tag="特惠"
-  price="{{item.price}}"
-  thumb="{{ item.mainImage }}"
-  thumb-class="goods-card-image"
-  title-class="goods-card-title"
-  id="{{item.id}}" 
-  bindtap="onClick">
-  <view slot="price-top">
-    <text class="goods-card-price-top">附近{{item.sales}}人已下单</text>
-    </view>
-  </van-card>
+        wx:for="{{ product }}" 
+        wx:key="{{item.id}}"
+        desc="{{item.description}}"
+        title="{{item.title}}" 
+        tag="特惠"
+        price="{{item.price}}"
+        thumb="{{ item.mainImage }}"
+        thumb-class="goods-card-image"
+        title-class="goods-card-title"
+        id="{{item.id}}" 
+        bindtap="onClick">
+        <view slot="price-top">
+            <text class="goods-card-price-top">附近{{item.sales}}人已下单</text>
+        </view>
+    </van-card>
   <!-- 秒杀专区模块 -->
   <view class="footer">
     <text>- 已经到底了 -</text>

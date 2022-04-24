@@ -14,14 +14,15 @@
     "van-field": "@vant/weapp/field/index"
   },  
   "pages": [
+    "pages/mall/mall",
+    "pages/mine/mine",
     "pages/login/login",
     "pages/register/register",
     "pages/start/start",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/mall/mall",
-    "pages/carts/carts",
-    "pages/mine/mine"
+    "pages/carts/carts"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

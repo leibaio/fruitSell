@@ -1,5 +1,5 @@
 // pages/home/home.js
-import request from '../../../utils/request'
+// import request from '../../utils/request'
 
 Page({
   data: {
@@ -10,15 +10,15 @@ Page({
     ],
     product: null
   },
-  async onClick(event) {
-    wx.navigateTo({
-      url: '/pages/product/detail/detail?id=' + event.currentTarget.id
-    })
-    await request.POST('/browse/save', {
-      productId: event.currentTarget.id,
-      userId: wx.getStorageSync('uid')
-    })
-  },
+//   async onClick(event) {
+//     wx.navigateTo({
+//       url: '/pages/product/detail/detail?id=' + event.currentTarget.id
+//     })
+//     await request.POST('/browse/save', {
+//       productId: event.currentTarget.id,
+//       userId: wx.getStorageSync('uid')
+//     })
+//   },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -37,11 +37,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: async function () {
-    this.getTabBar().init();
-    let res = await request.GET('/product/list');
-    this.setData({
-      product: res.data.data
-    })
+    // this.getTabBar().init();
+    // let res = await request.GET('/product/list');
+    // this.setData({
+    //   product: res.data.data
+    // })
   },
 
   /**

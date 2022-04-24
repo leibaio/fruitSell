@@ -4,9 +4,10 @@
   <!-- 用户信息模块 -->
   <view class="user-info">
     <view class="avatar">
-      <van-image round width="2.8rem" height="2.8rem" src="{{avatarUrl}}" />
+      <!-- <van-image round width="2.8rem" height="2.8rem" src="{{avatarUrl}}" /> -->
+      <open-data type="userAvatarUrl"></open-data>
     </view>
-    <view class="nickname"><text>{{nickName}}</text></view>
+    <view class="nickname"><open-data type="userNickName"></open-data></view>
   </view>
   <!-- 用户订单模块 -->
   <van-grid border="{{false}}" square="{{true}}" column-num="4" custom-class="mine-order">
@@ -18,9 +19,9 @@
       <van-grid-item icon="logistics" url="/pages/order/order?id=2" text="配送中" />
       <van-grid-item icon="sign" url="/pages/order/order?id=3" text="待收货" />
 
-    </van-grid>
+  </van-grid>
   <!-- 服务模块 -->
-  <van-grid border="{{false}}" square="{{true}}" column-num="4" custom-class="grid">
+  <van-grid border="{{false}}" square="{{true}}" column-num="4" custom-class="service-order">
     <van-cell title="我的服务" title-class="cell-title" border="{{false}}" />
     <van-grid-item icon="browsing-history-o" url="/pages/browse/browse" text="浏览记录" />
     <van-grid-item icon="like-o" url="/pages/collection/collection" text="我的收藏" />

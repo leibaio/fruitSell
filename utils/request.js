@@ -1,5 +1,5 @@
 // 通用请求路径basePath
-var basePath = 'http://192.168.1.102:8000/app'
+var basePath = 'http://192.168.0.1:8000/app'
 
 // 发送GET请求
 function GET(url, data = {}){
