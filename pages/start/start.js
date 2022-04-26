@@ -8,6 +8,18 @@ Page({
 
     },
 
+    tapScan() {
+        console.log('扫码');
+        var that = this
+        wx.scanCode({
+          success: function(res) {
+            that.setData({
+              result: res.result
+            })
+          },
+          fail: function(res) {}
+        })
+    },
     /**
      * 生命周期函数--监听页面加载
      */
