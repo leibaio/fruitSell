@@ -2,3 +2,17 @@
 .van-card {
     margin: 40rpx 0;
 }
+
+.carts-empty {
+  margin-top: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carts-empty-text {
+  font-size: large;
+  color: rgb(197, 179, 179);
+  display: flex;
+  justify-content: center;
+}

@@ -1,15 +1,15 @@
 /* pages/start/start.wxss */
-.start_bg {
+.start-bg {
     margin-top: 150rpx;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.start_QR {
+.start-QR {
     margin-top: 150rpx;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;   
 }
+

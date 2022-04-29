@@ -1,15 +1,14 @@
 <!--pages/start/start.wxml-->
 
-<van-image class="start_bg"
+<van-image class="start-bg"
   width="700rpx"
   height="500rpx"
   src="/assets/img/start.png"
 />
 
-<van-image class="start_QR"
+<van-image class="start-QR"
   width="300rpx"
   height="300rpx"
   src="/assets/img/QR.png"
   bindtap="tapScan"
 />
-

@@ -1,34 +1,34 @@
 <!--pages/carts/carts.wxml-->
-<van-card
-  num="2"
-  tag="标签"
-  price="10.00"
-  desc="描述信息"
-  title="商品标题"
-  thumb="{{ '/assets/img/fruits.png' }}"
->
-</van-card>
-<van-card
-  num="2"
-  tag="标签"
-  price="10.00"
-  desc="描述信息"
-  title="商品标题"
-  thumb="{{ '/assets/img/fruits.png' }}"
->
-</van-card>
-<van-card
-  num="2"
-  tag="标签"
-  price="10.00"
-  desc="描述信息"
-  title="商品标题"
-  thumb="{{ '/assets/img/fruits.png' }}"
->
-</van-card>
+<view>
+  <!-- 购物车里有物品 -->
+  <view wx:if="{{hasList}}">
+    <van-card
+      wx:for="{{carts}}"
+      wx:key="index"
+      num="{{carts[index].num}}"
+      tag="{{carts[index].tag}}"
+      price="{{carts[index].price}}"
+      desc="{{carts[index].desc}}"
+      title="{{carts[index].title}}"
+      thumb="{{ '/assets/img/fruits.png' }}"
+    >
+    </van-card>
+    
+    <van-submit-bar
+      price="{{totalPrice}}"
+      button-text="提交订单"
+      bind:submit="sumbitOrder"
+    />
+  </view>
 
-<van-submit-bar
-  price="{{ 3050 }}"
-  button-text="提交订单"
-  bind:submit="onSubmit"
-/>
+  <!-- 购物车为空 -->
+  <view wx:else>
+    <van-image class="carts-empty"
+      width="700rpx"
+      height="800rpx"
+      src="/assets/img/carts_empty.png"
+    />
+    <text class="carts-empty-text">购物车为空</text>
+  </view>
+</view>
+
