@@ -121,6 +121,21 @@ Page({
   sumbitOrder() {
     
   },
+
+  // 切换状态
+  switchState() {
+    if (this.data.hasList == true) {
+      this.setData({
+        ['hasList']: false,
+      })
+    } else {
+      this.setData({
+        ['hasList']: true,
+      })      
+    }
+
+  },
+
   /**
    * 生命周期函数--监听页面隐藏
    */
@@ -148,8 +163,16 @@ Page({
   onReachBottom: function () {
     console.log(this.data.carts);
     console.log(this.data.carts[0].title);
-    console.log(this.data.totalPrice)
-
+    console.log(this.data.totalPrice);
+    if (this.data.hasList == true) {
+      this.setData({
+        ['hasList']: false,
+      })
+    } else {
+      this.setData({
+        ['hasList']: true,
+      })      
+    }
   },
 
   /**

@@ -30,5 +30,7 @@
     />
     <text class="carts-empty-text">购物车为空</text>
   </view>
+
+  <!-- 购物车有无商品切换, 上拉测试 -->
 </view>
 
