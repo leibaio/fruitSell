@@ -117,24 +117,12 @@ Page({
     });
   },
 
-  // 提交订单跳转
+  // 结算跳转
   sumbitOrder() {
-    
+    console.log('结算');
+ 
   },
 
-  // 切换状态
-  switchState() {
-    if (this.data.hasList == true) {
-      this.setData({
-        ['hasList']: false,
-      })
-    } else {
-      this.setData({
-        ['hasList']: true,
-      })      
-    }
-
-  },
 
   /**
    * 生命周期函数--监听页面隐藏
@@ -164,6 +152,8 @@ Page({
     console.log(this.data.carts);
     console.log(this.data.carts[0].title);
     console.log(this.data.totalPrice);
+
+    // 测试切换购物车状态
     if (this.data.hasList == true) {
       this.setData({
         ['hasList']: false,

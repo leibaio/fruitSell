@@ -16,7 +16,7 @@
     
     <van-submit-bar
       price="{{totalPrice}}"
-      button-text="提交订单"
+      button-text="结算"
       bind:submit="sumbitOrder"
     />
   </view>
