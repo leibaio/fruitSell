@@ -1,4 +1,6 @@
 // pages/carts/carts.js
+
+import Dialog from '../../miniprogram_npm/@vant/weapp/dialog/dialog';
 Page({
 
   /**
@@ -13,6 +15,7 @@ Page({
       name: 'hello'
     }
   },
+
 
   /**
    * 生命周期函数--监听页面加载
@@ -56,20 +59,24 @@ Page({
 
   // 删除购物车商品事件
   deleteList(e) {
-    const index = e.currentTarget.dataset.index;
-    let carts = this.data.carts;
-    carts.splice(index, 1);                 // 删除购物车列表里这个商品
-    this.setData({
-      carts: carts
-    });
-    if (!carts.length) {                  // 如果购物车为空
+    console.log('点击删除')
+    Dialog.confirm({
+      message: '确定删除吗？',
+    }).then(() => {
+      const index = e.currentTarget.dataset.index;
+      let carts = this.data.carts;
+      carts.splice(index, 1);                 // 删除购物车列表里这个商品
       this.setData({
-        hasList: false                  // 修改标识为false  显示购物车为空页面
+        carts: carts
       });
-    } else {                              // 如果不为空 
-      this.getTotalPrice();              // 重新计算总价格
-    }
-
+      if (!carts.length) {                  // 如果购物车为空
+        this.setData({
+          hasList: false                  // 修改标识为false  显示购物车为空页面
+        });
+      } else {                              // 如果不为空 
+        this.getTotalPrice();              // 重新计算总价格
+      }
+    })
   },
 
   // 绑定加数量事件

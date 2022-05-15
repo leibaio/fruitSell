@@ -1,24 +1,37 @@
 <!--pages/carts/carts.wxml-->
 <view>
+  <van-notice-bar
+    color="#1989fa"
+    background="#ecf9ff"
+    left-icon="info-o"
+    scrollable 
+    text="左划滑动购物车商品选择删除"
+  />
   <!-- 购物车里有物品 -->
   <view wx:if="{{hasList}}">
+  <van-swipe-cell 
+    right-width="{{ 65 }}"
+    wx:for="{{carts}}"
+    wx:key="index"
+  >
     <van-card
-      wx:for="{{carts}}"
-      wx:key="index"
       num="{{carts[index].num}}"
       tag="{{carts[index].tag}}"
-      price="{{carts[index].price}}"
       desc="{{carts[index].desc}}"
+      price="{{carts[index].price}}"
       title="{{carts[index].title}}"
       thumb="{{ '/assets/img/fruits.png' }}"
     >
     </van-card>
-    
-    <van-submit-bar
-      price="{{totalPrice}}"
-      button-text="结算"
-      bind:submit="sumbitOrder"
-    />
+    <view slot="right" bindtap="deleteList" id="index" class="van-swipe-cell__right">删除</view>
+  </van-swipe-cell>
+  <van-submit-bar
+    price="{{totalPrice}}"
+    button-text="结算"
+    bind:submit="sumbitOrder"
+  />
+  <van-dialog id="van-dialog" />
+
   </view>
 
   <!-- 购物车为空 -->
