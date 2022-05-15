@@ -1,0 +1,11 @@
+
+<view class="container">
+  <van-image class="login_bg"
+    width="650rpx"
+    height="500rpx"
+    src="/assets/img/login.png"
+  />
+  <van-button custom-class="button" type="info" bindtap="userLogin" round>微信一键登录</van-button>
+  <text class="info" bindtap="normalLogin"><text class="info-text" >账号密码登录</text></text>
+  <text class="info">登录即代表已同意<text class="info-text"> 用户协议 </text>和<text class="info-text"> 隐私保护政策 </text></text>
+</view>

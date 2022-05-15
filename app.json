@@ -17,14 +17,15 @@
     "van-dialog": "@vant/weapp/dialog/index"
   },  
   "pages": [
+    "pages/wechatLogin/wechatLogin",
+    "pages/login/login",
+    "pages/start/start",
     "pages/carts/carts",
     "pages/mall/mall",
-    "pages/start/start",
     "pages/mine/mine",
     "pages/register/register",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/login/login",
     "pages/address/list/list",
     "pages/address/add/add",
     "pages/address/edit/edit"

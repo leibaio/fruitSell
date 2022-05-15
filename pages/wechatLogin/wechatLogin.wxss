@@ -1,0 +1,40 @@
+/* pages/wechatLogin/wechatLogin.wxss */
+
+page {
+  background-color: #ffffff;
+  height: 100%;
+}
+
+
+.login_bg {
+  margin: 150rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  padding: 180rpx 0;
+} 
+
+.button{
+  width: 50%;
+  margin: 12% 10% 12% 10%;
+}
+
+.info{
+  display: block;
+  padding: 2%;
+  text-align: center;
+  color: rgb(64, 64, 65);
+  font-size: 24rpx;
+  font-weight: 300;
+}
+.info-text{
+  font-weight: 400;
+  color: #0559ad;
+}
