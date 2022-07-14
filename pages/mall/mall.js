@@ -49,42 +49,42 @@ Page({
           description: '新鲜菠菜',
           title: '菠菜300g',
           price: 6.00,
-          mainImage: '/assets/productImg/IMG_1296.JPG'
+          mainImage: 'https://img10.360buyimg.com/n7/jfs/t1/212370/9/20229/208859/62ad321aEca2de5c4/666bba7878296a0c.jpg.avif'
         },
         {
           id: 10,
           description: '酸甜可口',
           title: '大红西红柿（番茄）400g',
           price: 4.00,
-          mainImage: '/assets/productImg/IMG_1299.JPG'
+          mainImage: 'https://img10.360buyimg.com/n7/jfs/t1/65594/39/17981/68045/6281e341Ed359ca0a/1cedc15e862d8a34.jpg.avif'
         },
         {
           id: 11,
           description: '葱香四溢 微辣清脆',
           title: '红洋葱450g',
           price: 6.00,
-          mainImage: '/assets/productImg/IMG_1301.JPG'
+          mainImage: 'https://img14.360buyimg.com/n7/jfs/t1/167796/32/7341/106425/603378e6Ef30ccb2d/a4ca10de872a8e9b.jpg.avif'
         },
         {
           id: 12,
-          description: '新鲜菠菜',
+          description: '新鲜生菜',
           title: '生菜300g',
           price: 6.00,
-          mainImage: '/assets/productImg/IMG_1303.JPG'
+          mainImage: 'https://img11.360buyimg.com/n7/jfs/t1/84957/12/22315/317766/620e5826E5b044ebc/05f366fa8a10e62c.jpg.avif'
         },
         {
           id: 13,
           description: '生熟两吃 美味不可挡',
           title: '长白萝卜600g',
           price: 6.00,
-          mainImage: '/assets/productImg/IMG_1305.JPG'
+          mainImage: 'https://img11.360buyimg.com/n7/jfs/t9925/239/365244464/170958/de5e5288/59ccdb30Nfe1f28d3.jpg.avif'
         },
         {
           id: 14,
           description: '新鲜大白菜 超好吃',
           title: '大白菜300g',
           price: 6.00,
-          mainImage: '/assets/productImg/IMG_1307.JPG'
+          mainImage: 'https://img12.360buyimg.com/n7/jfs/t1/184865/28/15900/98124/60ffb9b3E14f2ae15/2d6bb368a1649152.jpg.avif'
         },
       ]
     })

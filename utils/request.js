@@ -1,5 +1,5 @@
 // 通用请求路径basePath
-var basePath = 'http://192.168.0.1:8000/app'
+var basePath = 'http://127.0.0.1:8089/'
 
 // 发送GET请求
 function GET(url, data = {}){
@@ -7,7 +7,7 @@ function GET(url, data = {}){
     wx.request({
       url: basePath + url,
       data: data,
-      header: { 'content-type': 'application/json' },
+      header: { 'content-type': 'application/json', 'token': 'cpipeyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjcGlwIiwiaWQiOjEsIm5hbWUiOiJzcGVlbjEyMyIsInBob25lIjoiMTM5MTQyNTMwODAiLCJpYXQiOjE2NTAxMjQ5ODYsImV4cCI6MTY1MDcyOTc4Nn0.5VMaNRy8UCNt4w6GxUYZZU39_FnRNWZyD25WWs9yIr8' },
       method: 'GET',
       success: (res) => { console.log(res); resolve(res) },
       fail: (err) => { console.log(err); reject(err) }

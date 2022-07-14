@@ -16,7 +16,7 @@
     "van-swipe-cell": "@vant/weapp/swipe-cell/index",
     "van-dialog": "@vant/weapp/dialog/index",
     "pay-dialog": "/components/pay-dialog/pay-dialog"
-  },  
+  },
   "pages": [
     "pages/wechatLogin/wechatLogin",
     "pages/login/login",
@@ -29,8 +29,8 @@
     "pages/logs/logs",
     "pages/address/list/list",
     "pages/address/add/add",
-    "pages/address/edit/edit"
-
+    "pages/address/edit/edit",
+    "pages/order/order"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -44,30 +44,30 @@
     "color": "#333",
     "selectedColor": "#2567F4",
     "list": [
-        {
-            "selectedIconPath": "assets/img/scan_y.png",
-            "iconPath": "assets/img/scan_n.png",
-            "pagePath": "pages/start/start",
-            "text": "开始"
-        },
-        {
-            "selectedIconPath": "assets/img/cart_y.png",
-            "iconPath": "assets/img/cart_n.png",
-            "pagePath": "pages/carts/carts",
-            "text": "购物车"
-        },
-        {
-            "selectedIconPath": "assets/img/mall_y.png",
-            "iconPath": "assets/img/mall_n.png",
-            "pagePath": "pages/mall/mall",
-            "text": "商城"
-        },
-        {
-            "selectedIconPath": "assets/img/mine_y.png",
-            "iconPath": "assets/img/mine_n.png",
-            "pagePath": "pages/mine/mine",
-            "text": "我的"
-        }
+      {
+        "selectedIconPath": "assets/img/scan_y.png",
+        "iconPath": "assets/img/scan_n.png",
+        "pagePath": "pages/start/start",
+        "text": "开始"
+      },
+      {
+        "selectedIconPath": "assets/img/cart_y.png",
+        "iconPath": "assets/img/cart_n.png",
+        "pagePath": "pages/carts/carts",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "assets/img/mall_y.png",
+        "iconPath": "assets/img/mall_n.png",
+        "pagePath": "pages/mall/mall",
+        "text": "商城"
+      },
+      {
+        "selectedIconPath": "assets/img/mine_y.png",
+        "iconPath": "assets/img/mine_n.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
     ]
   },
   "sitemapLocation": "sitemap.json",
