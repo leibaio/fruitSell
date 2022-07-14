@@ -113,12 +113,12 @@ Page({
   getTotalPrice() {
     let carts = this.data.carts;  // 获取购物车列表
     let total = 0;      
-    for (let i = 0; i < carts.length; i ++) {   // 循环列表得到每个数据
+    for (let i = 0; i < carts.length; i++) {   // 循环列表得到每个数据
         if (carts[i].selected) {  // 判断选中才会计算价格
           total += carts[i].num * carts[i].price;   // 所有价格加起来
         }
     }
-    this.setData({                          // 最后赋值到data 中渲染到页面
+    this.setData({                          // 最后赋值到 data 中渲染到页面
       carts: carts,
       totalPrice: total.toFixed(2) * 100
     });
@@ -127,7 +127,10 @@ Page({
   // 结算跳转
   sumbitOrder() {
     console.log('结算');
- 
+    const payDialog = this.selectComponent('#pay-dialog');
+    // 调用子组件，弹出支付二维码
+    payDialog.test()
+    payDialog.getPayConfig()
   },
 
 

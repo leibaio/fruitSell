@@ -14,7 +14,8 @@
     "van-field": "@vant/weapp/field/index",
     "van-notice-bar": "@vant/weapp/notice-bar/index",
     "van-swipe-cell": "@vant/weapp/swipe-cell/index",
-    "van-dialog": "@vant/weapp/dialog/index"
+    "van-dialog": "@vant/weapp/dialog/index",
+    "pay-dialog": "/components/pay-dialog/pay-dialog"
   },  
   "pages": [
     "pages/wechatLogin/wechatLogin",

@@ -45,5 +45,7 @@
   </view>
 
   <!-- 购物车有无商品切换, 上拉测试 -->
+
+  <pay-dialog id="pay-dialog" from="carts" ></pay-dialog>
 </view>
 
