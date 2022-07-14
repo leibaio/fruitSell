@@ -1,21 +1,28 @@
 <!--pages/address/list/list.wxml-->
 <van-cell-group>
   <van-field
-    value="{{ username }}"
+    value="{{ userName }}"
     required
     clearable
-    label="用户名"
-    icon="question-o"
-    placeholder="请输入用户名"
+    placeholder="姓名"
+    label="姓名"
     bind:click-icon="onClickIcon"
   />
 
   <van-field
-    value="{{ password }}"
-    type="password"
-    label="密码"
-    placeholder="请输入密码"
+    value="{{ phoneNum }}"
+    label="电话号码"
+    placeholder="电话号码"
     required
     border="{{ false }}"
   />
+
+  <van-field
+    value="{{ detailAddress }}"
+    label="详细地址"
+    placeholder="详细地址"
+    required
+    border="{{ false }}"
+  />
+  <van-button icon="star-o" type="info" class="save-btn" size="large">保存</van-button>
 </van-cell-group>

@@ -1,1 +1,5 @@
 /* pages/address/list/list.wxss */
+.save-btn {
+  display: flex;
+  justify-content: center;
+}

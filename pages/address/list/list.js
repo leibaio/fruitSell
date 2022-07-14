@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    userName: '仁科',
+    phoneNum: '12312341234',
+    detailAddress: '上海市浦东新区金海路 2360'
   },
 
   /**
