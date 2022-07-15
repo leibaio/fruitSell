@@ -11,7 +11,7 @@
   </view>
   <!-- 用户订单模块 -->
   <van-grid border="{{false}}" square="{{true}}" column-num="4" custom-class="mine-order">
-      <van-cell title="我的订单" border="{{false}}" value="全部订单" title-class="cell-title" value-class="cell-value" >
+      <van-cell title="我的订单" border="{{false}}" value="全部订单" title-class="cell-title" value-class="cell-value" bindtap="toOrderList">
         <van-icon slot="right-icon" size="13px" color="#969799" name="arrow" class="custom-icon" />
       </van-cell>
       <van-grid-item icon="pending-payment" url="/pages/order/order?id=0" text="待付款" />

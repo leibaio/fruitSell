@@ -159,6 +159,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
+    console.log('-----------触底切换-----------')
     console.log(this.data.carts);
     console.log(this.data.carts[0].title);
     console.log(this.data.totalPrice);
